@@ -12,7 +12,7 @@ jobs:
     environment: 'dev'
     steps:
 
-      - name: Run a multi-line script
+      - name: Executando no enviorment dev
         run: |
           echo [development]
 
@@ -21,6 +21,6 @@ jobs:
     environment: 'prod'
     steps:
 
-      - name: Run a multi-line script
+      - name: Executando no enviorment prod
         run: |
           echo [production]
