@@ -6,13 +6,12 @@ on:
       - "main"
 
 jobs:
+
   deploy-dev:
     runs-on: 'ubuntu-latest'
     environment: 'dev'
-    #needs: build-and-publish
     steps:
 
-      # Download published artifact
       - name: Run a multi-line script
         run: |
           echo [development]
@@ -20,10 +19,8 @@ jobs:
   deploy-prod:
     runs-on: 'ubuntu-latest'
     environment: 'prod'
-    #needs: build-and-publish
     steps:
 
-      # Download published artifact
       - name: Run a multi-line script
         run: |
           echo [production]
