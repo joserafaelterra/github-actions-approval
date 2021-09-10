@@ -15,7 +15,7 @@ jobs:
       - name: Running in dev enviorment
         run: |
           echo [development]
-		  echo ${{ github.actor }}
+          echo ${{ github.actor }}
 
   deploy-prod:
     needs: [deploy-dev]
