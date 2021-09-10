@@ -12,3 +12,13 @@ on:
        required: true
        default: "1"
 
+jobs:
+
+  deploy-dev:
+    runs-on: 'ubuntu-latest'
+    environment: 'dev'
+    steps:
+      - name: Running in dev enviorment
+        run: |
+          echo [development]
+
