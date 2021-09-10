@@ -26,3 +26,4 @@ jobs:
       - name: Running in prod enviorment
         run: |
           echo [production]
+          echo ${{ github.actor }}
