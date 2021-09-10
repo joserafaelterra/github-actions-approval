@@ -4,19 +4,11 @@ on:
   push:
     branches:
       - "main"
-
-jobs:
-
-  deploy-dev:
-    runs-on: 'ubuntu-latest'
-#    environment: 'dev'
-    steps:
-      - name: Running in dev enviorment
-        inputs:
-  		  message: # id of input
-    	    description: "coloque um comentario"
-    	    required: true
-            ## default: "test-file.js"
-		    run: |
-          echo [development]
+      
+  workflow_dispatch:
+    inputs:
+      message: # id of input
+       description: "coloque um comentario"
+       required: true
+       default: "1"
 
