@@ -15,7 +15,6 @@ jobs:
         uses: joserafaelterra/hello-world-docker-action@master
         with:
           repository: teste
-          name: jose.terra
       # Use the output from the `hello` step
       - name: Get the output time
         run: | 
